@@ -1,0 +1,56 @@
+@import url("./fonts.css");
+
+:root {
+  --header-height: 60px;
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background-color: #101010;
+}
+
+.header_container {
+  width: 100%;
+  height: var(--header-height);
+  background-color: #080808;
+}
+
+.content_container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_item {
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.logo_item__icon {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo_item__text {
+  color: #ffffff;
+  margin-bottom: -4px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -2%;
+}
