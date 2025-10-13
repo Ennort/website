@@ -243,20 +243,3 @@
     font-weight: 300;
     color: var(--color-white);
 }
-
-.arrows {
-    width: var(--arrows-width);
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    user-select: none;
-    pointer-events: none;
-}
-
-.arrows__left {
-    left: 0;
-}
-
-.arrows__right {
-    right: 0;
-}
