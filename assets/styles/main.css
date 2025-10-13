@@ -14,9 +14,13 @@
 
 body {
   background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header_container {
+  position: fixed;
   width: 100%;
   height: var(--header-height);
   background-color: #080808;
@@ -53,4 +57,38 @@ body {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: -2%;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main_{
+  height: 100vh;
+}
+
+.main_section {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main_section__title {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 48px;
+  font-weight: Regular;
+  user-select: none;
+}
+
+.main_section__motto {
+  font-family: 'HindMadurai', sans-serif;
+  font-size: 16px;
+  font-weight: Light;
+  user-select: none;
 }
