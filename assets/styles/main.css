@@ -107,6 +107,7 @@ button {
 .main_container {
   width: 100%;
   height: 100vh;
+  margin-top: -4%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,15 +129,8 @@ button {
 
 .main_section__title {
   font-family: 'JetBrains Mono', sans-serif;
-  font-size: 48px;
-  font-weight: Regular;
-  user-select: none;
-}
-
-.main_section__motto {
-  font-family: 'HindMadurai', sans-serif;
-  font-size: 16px;
-  font-weight: Light;
+  font-size: 72px;
+  font-weight: 400;
   user-select: none;
 }
 
@@ -148,7 +142,7 @@ button {
 .platforms_section {
   width: 100%;
   max-width: 480px;
-  margin-top: 96px;
+  margin-top: 64px;
 }
 
 .platforms_section__item {
@@ -244,4 +238,23 @@ button {
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.arrows {
+  width: 30%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.arrows__left {
+  left: 0;
+  /* transform: translateY(100%); */
+}
+
+.arrows__right {
+  right: 0;
+  /* transform: translateY(100%) rotate(180deg); */
 }
