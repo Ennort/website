@@ -24,6 +24,12 @@ a {
   color: #ffffff;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .header_container {
   position: fixed;
   width: 100%;
@@ -204,10 +210,38 @@ a {
 
 .contacts_section {
   position: fixed;
+  height: 40px;
   bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.contacts_section:hover {
+  background-color: #202020;
+  transition: background-color 0.3s ease;
+}
+
+.contacts_section:active {
+  background-color: #323232;
+  transition: background-color 0.3s ease;
+}
+
+.contacts_section__icon {
+  width: 20px;
+  height: auto;
+}
+
+.contacts_section__text {
+  font-family: 'HindMadurai', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
 }
