@@ -10,8 +10,17 @@
     background-color: var(--color-dark-1);
 }
 
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .content_container {
     max-width: var(--content-width);
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -26,6 +35,7 @@
     align-items: center;
     user-select: none;
     cursor: pointer;
+    padding: 0.4em;
 }
 
 .logo_item__icon {
