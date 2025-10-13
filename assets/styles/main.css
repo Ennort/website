@@ -213,6 +213,11 @@ button {
   padding: 8px 16px;
   border-radius: 8px;
   background-image: linear-gradient(90deg, #24ABFF, #00D9FF, #00FFF2);
+  transition-duration: 0.3s;
+}
+
+.platforms_section__item__link:hover {
+  filter: brightness(1.2);
 }
 
 .platforms_section__item__link__text {
