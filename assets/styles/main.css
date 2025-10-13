@@ -93,7 +93,7 @@
 
 .main_container {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     margin-top: var(--main-margin-top);
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@
 
 .main_ {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .main_section {
@@ -115,15 +115,22 @@
 
 .main_section__title {
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: var(--h1-font-size);
+    font-size: calc(var(--h1-font-size-base) + 2vw);
     font-weight: 400;
     user-select: none;
+}
+
+@media (max-width: 768px) {
+    .main_section__title {
+        font-size: 8vw;
+    }
 }
 
 .vertical {
     display: flex;
     flex-direction: column;
 }
+
 
 .platforms_section {
     font-size: 0.8rem;
@@ -211,6 +218,42 @@
     height: auto;
     margin-left: 1em;
 }
+
+@media (max-width: 768px) {
+  .platforms_section__item {
+    margin-top: 5.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .platforms_section__item__left__icon {
+    max-width: 20rem;
+    width: 40vw;
+  }
+
+  .platforms_section__item__left,
+  .platforms_section__item__right {
+    width: 100%;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .platforms_section__item__left::after {
+    display: none;
+  }
+
+  .platforms_section__item__right__text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .platforms_section__item__link__text {
+    font-size: 1.6rem;
+  }
+}
+
 
 .contacts_section {
     font-size: 0.8rem;
