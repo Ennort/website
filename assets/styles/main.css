@@ -86,16 +86,18 @@ button {
   height: 40px;
   border-radius: 8px;
   padding: 8px;
+  opacity: 0.85;
+  transition-duration: 0.3s;
 }
 
 .links_section__link_container:hover {
   background-color: #202020;
-  transition: background-color 0.3s ease;
+  opacity: 1;
 }
 
 .links_section__link_container:active {
   background-color: #323232;
-  transition: background-color 0.3s ease;
+  opacity: 1;
 }
 
 .links_section__link_container__icon {
@@ -216,26 +218,26 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  transition-duration: 0.3s;
 }
 
 .contacts_section:hover {
   background-color: #202020;
-  transition: background-color 0.3s ease;
 }
 
 .contacts_section:active {
   background-color: #323232;
-  transition: background-color 0.3s ease;
 }
 
 .contacts_section__icon {
-  width: 20px;
+  width: 24px;
   height: auto;
 }
 
 .contacts_section__text {
   font-family: 'HindMadurai', sans-serif;
-  font-size: 16px;
+  letter-spacing: 1%;
+  font-size: 18px;
   font-weight: 300;
   color: #ffffff;
 }

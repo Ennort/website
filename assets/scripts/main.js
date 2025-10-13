@@ -6,16 +6,18 @@ function SetupContactButton() {
   const contactButtonIcon = contactButton.querySelector('.contacts_section__icon');
 
   const checkmarkIconSrc = './assets/img/Check_Icon_SVG_White.svg';
+  const originalText = contactButtonText.textContent.trim();
+  const originalIconSrc = contactButtonIcon.src;
+
+  let timer = null;
 
   contactButton.addEventListener('click', () => {
-    const originalText = contactButtonText.textContent.trim();
-    const originalIconSrc = contactButtonIcon.src;
-
     navigator.clipboard.writeText(originalText);
     contactButtonText.textContent = 'Copied!';
     contactButtonIcon.src = checkmarkIconSrc;
 
-    setTimeout(() => {
+    timer && clearTimeout(timer);
+    timer = setTimeout(() => {
       contactButtonText.textContent = originalText;
       contactButtonIcon.src = originalIconSrc;
     }, 1000);
