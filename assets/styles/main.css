@@ -143,7 +143,7 @@ button {
 
 .platforms_section {
   width: 100%;
-  max-width: 480px;
+  max-width: 720px;
   margin-top: 64px;
 }
 
@@ -152,20 +152,21 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 80px;
+  height: 160px;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 16px;
+  transition-duration: 0.3s;
 }
 
 .platforms_section__item__left {
   position: relative;
-  background-color: #161616;
+  background-color: transparent;
   width: 40%;
-  height: 80px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 36px;
+  padding: 40px;
 }
 
 .platforms_section__item__left::after {
@@ -175,7 +176,7 @@ button {
   transform: translateY(-50%);
   right: 0;
   width: 2px;
-  height: 64%;
+  height: 100%;
   background-color: #323232;
 }
 
@@ -186,22 +187,46 @@ button {
 
 .platforms_section__item__right {
   position: relative;
-  background-color: #161616;
+  background-color: transparent;
   width: 60%;
-  height: 80px;
-  padding: 20px;
+  height: 160px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 20px;
   color: #ffffff;
 }
 
 .platforms_section__item__right__text {
   font-family: 'HindMadurai', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  user-select: none;
+}
+
+.platforms_section__item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(90deg, #24ABFF, #00D9FF, #00FFF2);
+}
+
+.platforms_section__item__link__text {
+  font-family: 'JetBrains Mono', sans-serif;
   font-size: 16px;
   font-weight: 400;
   user-select: none;
+  color:#080808
+}
+
+.platforms_section__item__link__icon {
+  width: 16px;
+  height: auto;
+  margin-left: 8px;
 }
 
 .contacts_section {
