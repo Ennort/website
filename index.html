@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ennort — digital solutions, Unity tools, and development assets for creators worldwide.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/main.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/icon" href="./public/Ennort_Favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./public/Ennort_Favicon.ico">
+    <meta name="theme-color" content="#101010">
 
     <!-- Title -->
-    <title>Ennort</title>
+    <title>Ennort — Digital Solutions</title>
+    <meta property="og:title" content="Ennort — Digital Solutions">
+    <meta property="og:description" content="Digital solutions, Unity tools, and development assets for creators worldwide.">
+    <meta property="og:image" content="./assets/img/Ennort_Icon_Blue_3colors_SVG.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ennort.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ennort",
+      "url": "https://ennort.com",
+      "logo": "https://ennort.com/assets/img/Ennort_Icon_Blue_3colors_SVG.svg",
+      "description": "Ennort — digital solutions, Unity tools, and development assets for creators worldwide.",
+      "sameAs": [
+        "https://github.com/Ennort",
+        "https://www.youtube.com/@Ennort"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@ennort.com",
+        "contactType": "customer support",
+        "availableLanguage": ["English"]
+      }
+    }
+    </script>
+
 </head>
 <body>
     <div class="header_container">
@@ -34,6 +63,7 @@
               href=""
               class="links_section__link"
               target="_blank"
+              aria-label="Visit GitHub page"
             >
               <div class="links_section__link_container">
                 <img
@@ -48,6 +78,7 @@
               href=""
               class="links_section__link"
               target="_blank"
+              aria-label="Visit YouTube channel"
             >
               <div class="links_section__link_container">
                 <img
@@ -64,7 +95,7 @@
     </div>
 
     <div class="main_container">
-      <main class="main">
+      <main class="main" role="main">
         <div class="content_container vertical">
 
           <section class="main_section">
@@ -76,7 +107,7 @@
             </p>
           </section>
 
-          <secton class="platforms_section vertical">
+          <section class="platforms_section vertical">
             <a
               href=""
               target="_blank"
@@ -85,7 +116,7 @@
               <div class="platforms_section__item__left">
                 <img
                   src="./assets/img/Unity_Logo_SVG_White.svg"
-                  alt="Unity Logo"
+                  alt="Unity platform logo"
                   class="platforms_section__item__left__icon"
                 />
               </div>
@@ -95,13 +126,17 @@
                 </p>
               </div>
             </a>
-          </secton>
+          </section>
 
         </div>
       </main>
     </div>
 
-    <button class="contacts_section">
+    <button
+      class="contacts_section"
+      type="button"
+      aria-label="Copy email address contact@ennort.com"
+    >
       <img
         src="./assets/img/Mail_Icon_SVG_White.svg"
         alt="Email Icon"
