@@ -139,6 +139,69 @@ a {
   flex-direction: column;
 }
 
+.platforms_section {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 96px;
+}
+
+.platforms_section__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.platforms_section__item__left {
+  position: relative;
+  background-color: #161616;
+  width: 40%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+
+.platforms_section__item__left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 2px;
+  height: 64%;
+  background-color: #323232;
+}
+
+.platforms_section__item__left__icon {
+  width: 100%;
+  height: auto;
+}
+
+.platforms_section__item__right {
+  position: relative;
+  background-color: #161616;
+  width: 60%;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.platforms_section__item__right__text {
+  font-family: 'HindMadurai', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  user-select: none;
+}
+
 .contacts_section {
   position: fixed;
   bottom: 7%;
