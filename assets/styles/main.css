@@ -132,13 +132,9 @@
 }
 
 .platforms_section__item {
-    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    overflow: hidden;
-    border-radius: 2em;
-    transition-duration: var(--duration-2);
 }
 
 .platforms_section__item__left {
@@ -146,7 +142,7 @@
     background-color: transparent;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 5em;
 }
@@ -163,7 +159,7 @@
 }
 
 .platforms_section__item__left__icon {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
