@@ -1,0 +1,38 @@
+:root {
+    --header-height: 80px;
+    --content-width: 1200px;
+    --platforms-section-width: 720px;
+
+    --main-margin-top: -4%;
+    --platforms-section-margin-top: 40px;
+    --arrows-width: 30%;
+
+    --h1-font-size: 80px;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-1: #080808;
+    --color-dark-2: #101010;
+    --color-dark-3: #202020;
+    --color-dark-4: #323232;
+
+    --color-accent-1: #24ABFF;
+    --color-accent-2: #00D9FF;
+    --color-accent-3: #00FFF2;
+    --gradient-accent-90deg: linear-gradient(
+        90deg,
+        var(--color-accent-1),
+        var(--color-accent-2),
+        var(--color-accent-3)
+    );
+
+    --default-opacity: 0.85;
+    --hover-opacity: 1;
+    --active-opacity: 1;
+
+    --brightness-hover: 1.2;
+
+    --duration-2: 0.3s;
+
+    --letter-spacing-text: -2%;
+}
